@@ -222,7 +222,7 @@
  {
 @@ -136,7 +211,7 @@ static struct rtable *pptp_route_output(
  	struct net *net;
-
+ 
  	net = sock_net(sk);
 -	flowi4_init_output(fl4, sk->sk_bound_dev_if, sk->sk_mark, 0,
 +	flowi4_init_output(fl4, 0, sk->sk_mark, 0,
